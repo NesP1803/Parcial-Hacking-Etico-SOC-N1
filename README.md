@@ -30,16 +30,10 @@ Aplicar conceptos y procedimientos básicos de un SOC Nivel 1 para identificar, 
 
 - **`fases_/`**: capturas de pantalla, registros y resultados de las actividades prácticas.
 - **`README.md`**: presentación y descripción general del trabajo.
-
-La estructura debe ajustarse a los archivos y carpetas realmente incluidos en el repositorio.
-
+  
 ## Consideraciones éticas
 
 Las actividades documentadas tienen fines exclusivamente académicos y formativos. Las pruebas de seguridad deben realizarse en entornos controlados y autorizados, respetando la confidencialidad de la información y las buenas prácticas de ciberseguridad.
-
-## Estado del proyecto
-
-**En desarrollo:** organización y consolidación de las evidencias correspondientes al parcial.
 
 ---
 
