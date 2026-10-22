@@ -28,8 +28,7 @@ Aplicar conceptos y procedimientos básicos de un SOC Nivel 1 para identificar, 
 
 ## Organización del repositorio
 
-- **`evidencias/`**: capturas de pantalla, registros y resultados de las actividades prácticas.
-- **`documentacion/`**: informes de incidentes, anexos y documentos complementarios.
+- **`fases_/`**: capturas de pantalla, registros y resultados de las actividades prácticas.
 - **`README.md`**: presentación y descripción general del trabajo.
 
 La estructura debe ajustarse a los archivos y carpetas realmente incluidos en el repositorio.
