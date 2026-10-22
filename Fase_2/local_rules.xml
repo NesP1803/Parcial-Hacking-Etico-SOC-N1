@@ -1,0 +1,27 @@
+<group name="syscheck,pagoclaro_c05,">
+  <rule id="100501" level="12">
+  <if_sid>550</if_sid>
+  <field name="file" type="pcre2">^/opt/pagoclaro/api/config\.env$</field>
+  <description>PagoClaro C05: modificacion critica en configuracion del API de pagos.</description>
+ <group>pagoclaro_api,integrity_violation,</group>
+ </rule>
+</group>
+<group name="pagoclaro,c05,postgresql,">
+ <rule id="100502" level="12">
+ <match type="pcre2">(?i)\bCreate\s+(ROLE|USER)\s+.*\bSUPERUSER\b</match>
+ <description>PagoClaro C05: creacion de cuenta privilegiada en PostgreSQL.</description>
+ <group>database,privilege_escalation,</group>
+ </rule>
+</group>
+<group name="pagoclaro,c05,vpn">
+  <rule id="100503" level="12">
+  <decoded_as>json</decoded_as>
+  <field name="event_type">^vpn_login$</field>
+  <field name="vpn_status">^success$</field>
+  <field name="role">^admin$</field>
+  <field name="country" type="pcre2" negate="yes">^CO$</field>
+  <field name="lab_simulated">^true$</field>
+  <description>PagoClaro C05: acceso VPN administrativo desde pais inusual.</description>
+  <group>vpn,authentication_success,pagoclaro,</group>
+ </rule>
+</group>
